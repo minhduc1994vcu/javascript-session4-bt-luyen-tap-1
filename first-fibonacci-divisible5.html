@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacci</title>
+</head>
+<body>
+<script>
+    let count = 1
+    let x = 0;
+    let y = 1;
+    let divisible5
+    while (count <=20) {
+        x = x + y;
+        y = y + x;
+        count ++;
+
+        if (x % 5 === 0) {
+            divisible5 = x;
+            break;
+        }
+        else if (y % 5 === 0) {
+            divisible5 = y;
+            break;
+        }
+    }
+    document.write("so dau tien chia het cho 5 trong day so fibonacci la " + divisible5)
+</script>
+</body>
+</html>

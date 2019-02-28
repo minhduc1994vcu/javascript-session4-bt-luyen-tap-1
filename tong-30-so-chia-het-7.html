@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0, tong = 0, divisible7 = 0;
+    for (let i = 1; count < 30; i++) {
+        if (i % 7 === 0) {
+            divisible7 = i;
+            tong += divisible7;
+            count++;
+        }
+    }
+    document.write('tong cua 30 so dau tien chia het cho 7 la: ' + tong)
+</script>
+</body>
+</html>
