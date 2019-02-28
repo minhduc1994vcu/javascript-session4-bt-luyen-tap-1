@@ -7,11 +7,15 @@
 <body>
 <script>
     let temp = parseInt(prompt('nhap nhiet do hien tai'));
-    if (temp > 100) {
+   while (temp > 100) {
+
         alert("giam nhiet do")
+       temp = parseInt(prompt('nhap nhiet do hien tai'));
     }
-    if (temp < 20) {
+    while (temp < 20) {
+
         alert("tang nhiet do")
+        temp = parseInt(prompt('nhap nhiet do hien tai'));
     }
 </script>
 </body>
